@@ -1,0 +1,1 @@
+# My_strict_full_project
