@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-family: 'Popping' , sans-serif;
+}
+h1, h2, h3, h4, h5, h6 , p{
+    margin: 0;
+    padding: 0 ;
+}
+header{
+
+background: #f6f9f9;
+
+padding: 15px 0;
+}
+.header_wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+
+width: 20%;
+}
+.logo img{
+
+}
+nav{
+
+width: 50%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    font-family: 'Lato', sans-serif;
+
+}
+
+nav ul li{
+
+
+}
+nav ul li a{
+
+color: #2d3950;
+
+text-decoration: none;
+
+text-transform: uppercase;
+
+margin-left: 50px;
+font-family: 'Lato', sans-serif;
+}
+nav ul li a:hover{
+    background-color:black;
+
+}
+
+.banner{
+    background-image: url(../images/banner-images.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+
+
+}
+.banner_content{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.banner_content h1{
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 500;
+
+
+}
+.banner_content span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color:#15a4fa;
+    line-height: 100px;
+
+    
+
+
+}
+.banner_content p{
+    color: #f6f6f6;
+    margin: 30px 0;
+
+    
+}
+.banner_content button{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #15a4fa;
+    padding: 9px 20px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: .4s all ease-in-out;
+}
+.banner_content button:hover{
+    background-color: #15a4fa;
+
+}
+.banner_content i{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    color: #fff;
+    animation-name: topdown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 1s all ease-in-out;
+}
+
+
+
+
+@keyframes topdown{
+    0%{
+        transform: translatey( 0px);
+    }
+    50%{
+        transform: translatey( 40px);
+    }
+    100%{
+        transform: translatey( 0px);
+    }
+}
+.simple_design{
+    width: 100%;
+    height: 150px;
+    background-color: #f6f9f9;
+    padding: 50px 0;
+   
+}
+.simple_wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+
+
+}
+.simple_wrapper h2{
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+.simple_wrapper p{
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+
+}
+.feature_section{
+    padding: 70px 0;
+
+
+}
+.feature_wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.feature{
+    width: 30%;
+    text-align: center;
+}
+.icon_box{
+    height: 60px;
+    
+
+
+}
+.icon_box i{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+49,5fc3ff+50,5fc3ff+100 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 49%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color:#ffffff;
+    
+
+
+}
+.feature h3{
+    margin: 12px 0;
+    color: #2d3950;
+
+}
+.feature p{
+    color: #999999;
+    padding: 20px 0;
+
+}
+.portfolio_section{
+    padding: 50px 0;
+    background-color: #f6f9f9;
+
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+
+
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.heading h1{
+
+
+}
+.heading p{
+    padding-top: 20px;
+    font-size: 16px;
+    color: #a7a8a8;
+    
+
+
+
+}
+.portfolio_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+
+}
+.design{
+    width: 32%;
+    margin-bottom: 18px;
+    position: relative;
+    display: block;
+   
+
+}
+
+.design img{
+    width: 100%;
+    display: block;
+
+}
+.design::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height: 0%;
+    background-color: #48baff;
+    opacity: .5;
+    transition: 1s all ease-in-out;
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.design::after{
+    content: '';
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 0%;
+    height: 0%;
+    background-color: #48baff;
+    opacity: .5;
+    transition: 1s all ease-in-out;
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+.design:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.design:hover::after{
+    width: 100%;
+    height: 100%;
+
+}
+.icon_list{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+    z-index: 9;
+
+
+}
+.icon_list ul{
+    list-style: none;
+    display: flex;
+
+}
+.icon_list ul li{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #efffef;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+
+}
+.icon_list ul li a{
+    color: #fff;
+
+}
+.design:hover .icon_list{
+    opacity: 1;
+    top: 50%;
+
+}
+
+
+.contact_us{
+    margin-top: 80px;
+    padding: 80px 0;
+    background-image: url(../images/banner-item.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.contact_us::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(2, 2, 54);
+    opacity: .5;
+    z-index: -1;
+}
+.form_wrapper{
+    width: 40%;
+    margin: auto;
+
+}
+.heading{
+
+}
+.heading h1{
+    color: #15a4fa;
+    font-weight: 300;
+    
+
+}
+.heading p{
+    color: #a7a8a8;
+    font-size: 13px;
+
+}
+.contact_form{
+
+}
+.contact_form form input[type=text], .contact_form form input[type='email']{
+     width: 100%;
+     background-color: transparent;
+     border: none;
+     border: 1px solid #f6f6f6;
+     padding: 10px 5px;
+     margin-bottom: 18px;
+     border-radius: 3px;
+}
+.contact_form form input[type=text]:hover{
+    border: 1px solid #48baff;
+}
+
+.contact_form form input[type='email']:hover{
+    
+     border: 1px solid #0095da;
+}
+.contact_form form input[type=checkbox]{
+
+}
+.contact_form form input[type=submit]{
+    
+
+}
+.contact_form form textarea{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #f6f6f6;
+    padding: 10px 5px;
+    margin-bottom: 18px;
+    border-radius: 3px;
+
+}
+.contact_form form textarea:hover{
+    border: 1px solid #0084ff;
+
+}
+.subsmit{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #9ba2ab;
+    
+
+}
+.checkbox{
+    display: flex;
+
+}
+.checkbox p{
+    color:#ebebec;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.submit {
+
+}
+
+
+.submit input{
+
+background: transparent;
+
+color: #fff;
+
+border: none;
+
+border: 1px solid #48baff;
+
+text-align: center;
+width: 60px;
+padding: 8px;
+border-radius: 3px;
+}
+.submit input:hover{
+    background-color: #15a4fa;
+}
+
+footer{
+    background-color: #f6f9f9;
+    padding: 30px 0;
+    text-align: center;
+
+}
+footer .footer_theam{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.term{
+
+}
+.term ul{
+    list-style: none;
+    display: flex;
+    
+
+}
+.term ul li{
+    margin-right: 10px;
+
+}
+.term ul li a{
+    color:#aeafaf;
+    text-decoration: none;
+
+
+
+}
+.social{
+
+}
+.social ul li a{
+    text-decoration: none;
+    color: #ffffff;
+
+
+}
+.social ul li{
+    margin-left: 17px;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background-color: #15a4fa;
+    
+
+}
+.social ul{
+    list-style: none;
+    display: flex;
+    
+
+
+}
